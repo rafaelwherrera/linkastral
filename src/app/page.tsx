@@ -2,15 +2,15 @@
 "use client"
 
 import { useState } from "react"
-import Background from "./components/Background"
-import Header from "./components/Header"
-import HeroSection from "./components/HeroSection"
-import ProblemSolutionSection from "./components/ProblemSolutionSection"
-import FeaturesSection from "./components/FeaturesSection"
-import DemoSection from "./components/DemoSection"
-import PricingSection from "./components/PricingSection"
-import CtaSection from "./components/CtaSection"
-import Footer from "./components/Footer"
+import Background from "../app/(public)/components/Background"
+import Header from "../app/(public)/components/Header"
+import HeroSection from "../app/(public)/components/HeroSection"
+import ProblemSolutionSection from "../app/(public)/components/ProblemSolutionSection"
+import FeaturesSection from "../app/(public)/components/FeaturesSection"
+import DemoSection from "../app/(public)/components/DemoSection"
+import PricingSection from "../app/(public)/components/PricingSection"
+import CtaSection from "../app/(public)/components/CtaSection"
+import Footer from "../app/(public)/components/Footer"
 
 export default function Home() {
 
