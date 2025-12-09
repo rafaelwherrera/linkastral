@@ -1,7 +1,8 @@
 // components/Header.tsx
 "use client"
 
-import { Star, LogIn, UserPlus } from "lucide-react"
+import { Star, LogIn, Menu } from "lucide-react"
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 
 interface HeaderProps {
     scrollToSection: (id: string) => void;
@@ -17,12 +18,10 @@ const navItems = [
 
 export default function Header({ scrollToSection }: HeaderProps) {
     return (
-        // Alterado 'sticky' para 'fixed' para garantir que fique sempre no topo
-        // Adicionado 'top-0' e 'left-0' para ancorar
         <header className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-background/60 shadow-lg shadow-purple-900/10">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center h-20">
 
-                {/* 🌌 Logo/Branding (Link Astral) */}
+                {/* LOGO */}
                 <div className="flex items-center gap-3 cursor-pointer" onClick={() => scrollToSection('hero')}>
                     <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
                     <span className="text-xl font-serif font-bold bg-gradient-to-r from-yellow-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
@@ -30,7 +29,7 @@ export default function Header({ scrollToSection }: HeaderProps) {
                     </span>
                 </div>
 
-                {/* 🧭 Navegação (Scroll Suave) */}
+                {/* NAV DESKTOP */}
                 <nav className="hidden md:flex space-x-8">
                     {navItems.map((item) => (
                         <a
@@ -43,19 +42,50 @@ export default function Header({ scrollToSection }: HeaderProps) {
                     ))}
                 </nav>
 
-                {/* 🔐 Botões de Autenticação */}
-                <div className="flex items-center space-x-3">
+                {/* LOGIN DESKTOP */}
+                <a
+                    href="/login"
+                    className="hidden sm:flex items-center gap-2 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-[1.02] shadow-md shadow-yellow-500/30"
+                >
+                    <LogIn className="w-5 h-5" />
+                    Login
+                </a>
 
-                    {/* Cadastrar (Botão de Destaque) */}
-                    <a
-                        href="/login" // Substitua por seu link de cadastro
-                        className="hidden sm:flex items-center gap-2 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-[1.02] shadow-md shadow-yellow-500/30"
-                    >
-                        <LogIn className="w-5 h-5" />
-                        Login
-                    </a>
-                </div>
+                {/* MOBILE MENU (SHEET) */}
+                <Sheet>
+                    <SheetTrigger className="md:hidden p-2 rounded-lg hover:bg-white/10 transition">
+                        <Menu className="w-7 h-7 text-yellow-400" />
+                    </SheetTrigger>
 
+                    <SheetContent side="right" className="bg-background/95 backdrop-blur-xl border-l border-white/10">
+                        <div className="flex flex-col space-y-6 mt-10">
+
+                            {/* NAV MOBILE */}
+                            {navItems.map((item) => (
+                                <button
+                                    key={item.id}
+                                    onClick={() => {
+                                        scrollToSection(item.id);
+                                        const sheet = document.querySelector("button[data-state='open']") as HTMLElement;
+                                        sheet?.click(); // Fecha o Sheet
+                                    }}
+                                    className="text-lg text-foreground hover:text-yellow-400 transition-colors text-left"
+                                >
+                                    {item.label}
+                                </button>
+                            ))}
+
+                            {/* LOGIN MOBILE */}
+                            <a
+                                href="/login"
+                                className="flex w-full items-center gap-2 bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 shadow-md shadow-yellow-500/30"
+                            >
+                                <LogIn className="w-5 h-5" />
+                                Login
+                            </a>
+                        </div>
+                    </SheetContent>
+                </Sheet>
             </div>
         </header>
     )
