@@ -1,5 +1,6 @@
 // components/CtaSection.tsx
 import { Sparkles, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function CtaSection() {
     return (
@@ -13,13 +14,14 @@ export default function CtaSection() {
                 {/* CTA Buttons - Amarelo e Roxo */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                     {/* Botão Primário (Manter) */}
-                    <button
+                    <Link
+                        href="https://www.asaas.com/c/kehg05cbnjga7it1" target="_blank"
                         className="cursor-pointer px-10 py-4 bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/40 flex items-center gap-2 group animate-glow"
                     >
                         <Sparkles className="w-5 h-5" />
                         Garantir Meu Link Astral
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </Link>
 
                     {/* Botão Secundário: TRANSFORMADO em Link do WhatsApp */}
                     <a

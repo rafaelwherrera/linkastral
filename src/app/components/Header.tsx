@@ -43,13 +43,13 @@ export default function Header({ scrollToSection }: HeaderProps) {
                 </nav>
 
                 {/* LOGIN DESKTOP */}
-                <a
+                {/* <a
                     href="/login"
                     className="hidden sm:flex items-center gap-2 bg-yellow-500 text-gray-900 font-bold py-2 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-[1.02] shadow-md shadow-yellow-500/30"
                 >
                     <LogIn className="w-5 h-5" />
                     Login
-                </a>
+                </a> */}
 
                 {/* MOBILE MENU (SHEET) */}
                 <Sheet>
@@ -76,13 +76,13 @@ export default function Header({ scrollToSection }: HeaderProps) {
                             ))}
 
                             {/* LOGIN MOBILE */}
-                            <a
+                            {/* <a
                                 href="/login"
                                 className="flex w-full items-center gap-2 bg-yellow-500 text-gray-900 font-bold py-3 px-4 rounded-lg hover:bg-yellow-400 transition-all duration-300 shadow-md shadow-yellow-500/30"
                             >
                                 <LogIn className="w-5 h-5" />
                                 Login
-                            </a>
+                            </a> */}
                         </div>
                     </SheetContent>
                 </Sheet>

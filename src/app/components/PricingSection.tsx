@@ -1,5 +1,6 @@
 // components/PricingSection.tsx
 import { Check } from "lucide-react"
+import Link from "next/link"
 
 export default function PricingSection() {
     return (
@@ -51,9 +52,11 @@ export default function PricingSection() {
                         </div>
 
                         {/* Botão de Ação Mágica */}
-                        <button className="cursor-pointer w-full py-4 bg-yellow-500 text-gray-900 font-extrabold text-xl rounded-xl shadow-lg shadow-yellow-500/40 hover:bg-yellow-400 transition-all duration-300 uppercase tracking-widest mb-8">
-                            Desvendar Meu Destino
-                        </button>
+                        <Link href="https://www.asaas.com/c/kehg05cbnjga7it1" target="_blank">
+                            <button className="cursor-pointer w-full py-4 bg-yellow-500 text-gray-900 font-extrabold text-xl rounded-xl shadow-lg shadow-yellow-500/40 hover:bg-yellow-400 transition-all duration-300 uppercase tracking-widest mb-8">
+                                Desvendar Meu Destino
+                            </button>
+                        </Link>
 
                         {/* Lista de Recursos (Foco nos Benefícios) */}
                         <ul className="space-y-4 border-t border-purple-700 pt-6">

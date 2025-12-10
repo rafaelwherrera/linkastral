@@ -1,5 +1,6 @@
 // components/HeroSection.tsx
 import { Star, Sparkles, Check, ArrowRight } from "lucide-react"
+import Link from "next/link";
 
 interface HeroSectionProps {
     scrollToSection: (id: string) => void;
@@ -30,20 +31,21 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
-                    <button
-                        onClick={() => scrollToSection("pricing")}
+                    <Link
+                        href="#pricing"
                         className="cursor-pointer px-8 py-4 bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/40 flex items-center gap-2 group"
                     >
                         <Sparkles className="w-5 h-5" />
                         Quero Meu Link Astral
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                    </button>
-                    <button
+                    </Link>
+                    <Link
+                        href="#problem"
                         onClick={() => scrollToSection("features")}
                         className="cursor-pointer px-8 py-4 border-2 border-pink-400 text-pink-400 hover:bg-pink-400/10 font-bold text-lg rounded-lg transition-all duration-300"
                     >
                         Descobrir Mais
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Trust indicators */}
