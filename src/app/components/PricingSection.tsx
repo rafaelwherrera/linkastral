@@ -20,9 +20,13 @@ export default function PricingSection() {
                     <div className="cursor-default w-full max-w-lg bg-gradient-to-br from-indigo-900/80 via-purple-900/80 to-pink-900/80 backdrop-blur-sm border-4 border-yellow-400 rounded-2xl p-10 shadow-2xl shadow-purple-500/50 transition-all duration-500 hover:shadow-yellow-400/70 relative transform scale-100 hover:scale-[1.02]">
 
                         {/* Etiqueta de Promoção Surreal */}
-                        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 bg-yellow-500 text-gray-900 px-6 py-2 rounded-full text-lg font-black tracking-wider border-2 border-white shadow-xl rotate-0 hover:rotate-2 transition-transform duration-300">
+                        <div className="absolute -top-6 left-1/2 transform -translate-x-1/2 
+    bg-yellow-500 text-gray-900 px-6 py-2 rounded-full text-lg font-black 
+    tracking-wider border-2 border-white shadow-xl rotate-0 
+    hover:rotate-2 transition-transform duration-300 text-center">
                             OFERTA RELÂMPAGO!
                         </div>
+
 
                         <div className="text-center mb-8 pt-4">
                             <h3 className="text-3xl font-extrabold text-white mb-2 tracking-wide">
@@ -34,7 +38,7 @@ export default function PricingSection() {
                         {/* Preço Promocional e Riscado */}
                         <div className="text-center mb-8">
                             <p className="text-white/70 text-lg line-through mb-1">
-                                De <span className="text-2xl font-bold">R$129,90</span>
+                                De <span className="text-2xl font-bold">R$149,90</span>
                             </p>
                             <div className="inline-flex items-end">
                                 <span className="text-5xl font-extrabold text-yellow-400 mr-2">R$</span>
@@ -59,11 +63,11 @@ export default function PricingSection() {
                             </li>
                             <li className="flex gap-3 items-start">
                                 <Check className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
-                                <span className="text-white/90 text-lg font-medium">Todas as Páginas e Temas Mágicos Liberados.</span>
+                                <span className="text-white/90 text-lg font-medium">Todas as Componentes e Temas Místicos Liberados.</span>
                             </li>
                             <li className="flex gap-3 items-start">
                                 <Check className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
-                                <span className="text-white/90 text-lg font-medium">Integrações Ilimitadas (Anúncios, Pixel, etc.).</span>
+                                <span className="text-white/90 text-lg font-medium">Integrações Ilimitadas (Redes Sociais, Pagamento, etc.).</span>
                             </li>
                             <li className="flex gap-3 items-start">
                                 <Check className="w-6 h-6 text-yellow-400 flex-shrink-0 mt-1" />
