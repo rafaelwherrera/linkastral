@@ -16,7 +16,7 @@ export default function ProblemSolutionSection() {
 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                     {/* Problem */}
-                    <div className="bg-card/50 backdrop-blur border border-purple-500/50 rounded-xl p-8 hover:border-pink-500/50 transition-all duration-300">
+                    <div className="bg-gradient-to-br backdrop-blur border border-purple-500/50 rounded-xl p-8 hover:border-pink-500/50 transition-all duration-300">
                         <h3 className="text-2xl font-bold mb-6 text-red-400 flex items-center gap-2">
                             <Sparkles className="w-6 h-6" />O Problema
                         </h3>
@@ -45,7 +45,7 @@ export default function ProblemSolutionSection() {
                     </div>
 
                     {/* Solution */}
-                    <div className="bg-gradient-to-br from-purple-900/20 to-pink-900/20 backdrop-blur border border-yellow-400/50 rounded-xl p-8 hover:border-yellow-400 transition-all duration-300">
+                    <div className="bg-white/5 from-purple-900/20 to-pink-900/20 backdrop-blur border border-yellow-400/50 rounded-xl p-8 hover:border-yellow-400 transition-all duration-300">
                         <h3 className="text-2xl font-bold mb-6 text-yellow-400 flex items-center gap-2">
                             <Star className="w-6 h-6 fill-yellow-400" />A Solução
                         </h3>

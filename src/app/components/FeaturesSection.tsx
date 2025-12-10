@@ -12,7 +12,7 @@ export default function FeaturesSection() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Feature 1 - Amarelo */}
-                    <div className="cursor-default group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+                    <div className="cursor-default group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-yellow-400/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/30 transition-all">
                             <Wand2 className="w-8 h-8 text-yellow-400" />
                         </div>
@@ -23,7 +23,7 @@ export default function FeaturesSection() {
                     </div>
 
                     {/* Feature 2 - Roxo/Índigo */}
-                    <div className="cursor-default group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+                    <div className="cursor-default group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-all">
                             <Star className="w-8 h-8 text-purple-500" />
                         </div>
@@ -34,7 +34,7 @@ export default function FeaturesSection() {
                     </div>
 
                     {/* Feature 3 - Pink */}
-                    <div className="cursor-default group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-400/20 transition-all duration-300">
+                    <div className="cursor-default group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-400/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-pink-400/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-pink-400/30 transition-all">
                             <Moon className="w-8 h-8 text-pink-400" />
                         </div>
@@ -45,7 +45,7 @@ export default function FeaturesSection() {
                     </div>
 
                     {/* Feature 4 - Amarelo */}
-                    <div className="cursor-default group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
+                    <div className="cursor-default group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-yellow-400/50 hover:shadow-lg hover:shadow-yellow-400/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-yellow-400/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-yellow-400/30 transition-all">
                             <Sparkles className="w-8 h-8 text-yellow-400" />
                         </div>
@@ -56,7 +56,7 @@ export default function FeaturesSection() {
                     </div>
 
                     {/* Feature 5 - Roxo/Índigo */}
-                    <div className="cursor-default group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
+                    <div className="cursor-default group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-purple-500/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-purple-500/30 transition-all">
                             <Star className="w-8 h-8 text-purple-500 fill-purple-500" />
                         </div>
@@ -67,7 +67,7 @@ export default function FeaturesSection() {
                     </div>
 
                     {/* Feature 6 - Pink */}
-                    <div className="cursor-default *:group bg-card/50 backdrop-blur border border-border rounded-xl p-8 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-400/20 transition-all duration-300">
+                    <div className="cursor-default *:group bg-white/5 backdrop-blur border border-border rounded-xl p-8 hover:border-pink-400/50 hover:shadow-lg hover:shadow-pink-400/20 transition-all duration-300">
                         <div className="w-14 h-14 bg-pink-400/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-pink-400/30 transition-all">
                             <Moon className="w-8 h-8 text-pink-400" />
                         </div>
