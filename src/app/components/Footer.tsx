@@ -22,7 +22,7 @@ export default function Footer() {
                     <div>
                         <div className="flex items-center gap-2 mb-4">
                             <Star className="w-6 h-6 text-yellow-400 fill-yellow-400" />
-                            <span className="font-serif font-bold text-lg text-yellow-400">Link Astral</span>
+                            <span className="font-serif font-bold text-lg text-yellow-400">Link Místico</span>
                         </div>
                         <p className="text-foreground/60 text-sm">
                             Portal Místico de Autoridade para Empreendedores Esotéricos.
@@ -87,7 +87,7 @@ export default function Footer() {
                 {/* Seção Social e Direitos Autorais */}
                 <div className="border-t border-border pt-8">
                     <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-                        <p className="text-sm text-foreground/60">© 2025 Link Astral. Todos os direitos reservados.</p>
+                        <p className="text-sm text-foreground/60">© 2025 Link Místico. Todos os direitos reservados.</p>
 
                         <div className="flex gap-6">
                             {/* Instagram */}

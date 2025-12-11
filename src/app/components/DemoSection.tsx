@@ -5,7 +5,7 @@ export default function DemoSection() {
             <div className="max-w-5xl mx-auto">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold mb-4">Veja em Ação</h2>
-                    <p className="text-xl text-foreground/70">Seu Link Astral funcionando perfeitamente</p>
+                    <p className="text-xl text-foreground/70">Seu Link Místico funcionando perfeitamente</p>
                 </div>
 
                 <div className="relative bg-gradient-to-br from-purple-900/10 to-pink-900/10 border border-border rounded-2xl overflow-hidden backdrop-blur">
@@ -17,7 +17,7 @@ export default function DemoSection() {
                             </div>
                             <img
                                 src="/mkp.png"
-                                alt="Link Astral em ação no mobile"
+                                alt="Link Místico em ação no mobile"
                                 className="w-full h-full object-cover mt-6 scale-110"
                             />
                         </div>

@@ -14,7 +14,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
                 <div className="flex items-center justify-center gap-3 mb-6">
                     <Star className="w-8 h-8 text-yellow-400 fill-yellow-400" />
                     <h1 className="text-4xl font-serif font-bold bg-gradient-to-r from-yellow-400 via-pink-400 to-yellow-400 bg-clip-text text-transparent">
-                        Link Astral
+                        Link Místico
                     </h1>
                     <Star className="w-8 h-8 text-yellow-400 fill-yellow-400" />
                 </div>
@@ -36,7 +36,7 @@ export default function HeroSection({ scrollToSection }: HeroSectionProps) {
                         className="cursor-pointer px-8 py-4 bg-yellow-500 text-gray-900 font-bold text-lg rounded-lg hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-yellow-500/40 flex items-center gap-2 group"
                     >
                         <Sparkles className="w-5 h-5" />
-                        Quero Meu Link Astral
+                        Quero Meu Link Místico
                         <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                     <Link

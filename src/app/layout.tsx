@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-  title: "Link Astral",
+  title: "Link Místico",
   description: "Design místico para presença digital",
 }
 

@@ -22,8 +22,8 @@ export default function Home() {
   return (
     <main className="relative overflow-hidden bg-background">
 
-      {/* NOVO HEADER ADICIONADO AQUI */}
-      <Header scrollToSection={scrollToSection} />
+      {/* NOVO HEADER ADICIONADO AQUI
+      <Header scrollToSection={scrollToSection} /> */}
 
       {/* Background Animado */}
       <Background />
